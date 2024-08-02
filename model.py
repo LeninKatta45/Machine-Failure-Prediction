@@ -29,8 +29,10 @@ app.add_middleware(
     allow_methods=["*"],
     allow_headers=["*"],
 )
-with open(r"C:\GenAi\maint.pickle4","rb") as f:
-    classifier=pickle.load(f)
+def Final():
+    with open("maint.pickle4","rb") as f:
+        classifier=pickle.load(f)
+    return classifier
 
 @app.get('/')
 def index():
@@ -51,7 +53,7 @@ def predict(data: Smart):
     Rotational_speed,
     Torque_NM,
     Tool_wear_min]]
-    prediction = classifier.predict(x)
+    prediction =Final().predict(x)
     if(prediction[0]==1):
         prediction="Machine Can Fail"
     else:

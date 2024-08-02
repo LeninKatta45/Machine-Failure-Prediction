@@ -1,0 +1,7 @@
+uvicorn
+fastapi
+numpy==1.24.3
+pydantic
+pandas
+scikit-learn==1.2.2
+pytest
