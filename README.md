@@ -20,14 +20,14 @@
 
 - **Programming Language:** Python
 - **Machine Learning Libraries:** Scikit-learn (Random Forest), Pandas, NumPy
-- **Other Libraries:** [Add any additional libraries here]
+- **Other Libraries:** Seaborn, Matplotlib
 
 ## Installation
 
 1. Clone the repository:
 
     ```bash
-    git clone https://github.com/yourusername/ai-predictive-maintenance.git
+    git clone https://github.com/yourusername/SmartPrevent.git
     cd ai-predictive-maintenance
     ```
 
